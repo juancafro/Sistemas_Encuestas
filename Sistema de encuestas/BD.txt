@@ -1,0 +1,23 @@
+Codigo para crear una tabla encuestas,respuestas, LOGIN
+
+CREATE TABLE encuestas(
+    id INT NOT NULL AUTO_INCREMENT,
+    titulo VARCHAR (50) NOT NULL,
+    fecha DATE NOT NULL,
+    PRIMARY KEY(id));
+
+
+
+CREATE TABLE respuestas(
+    id INT NOT NULL AUTO_INCREMENT,
+    texto VARCHAR (50) NOT NULL,
+    votos INT(5) NOT NULL,
+    idenc INT NOT NULL,
+    PRIMARY KEY(id));
+
+
+CREATE TABLE LOGIN(
+    id INT NOT NULL AUTO_INCREMENT,
+    email VARCHAR (50) NOT NULL,
+    pass VARCHAR (50) NOT NULL,
+    PRIMARY KEY(id));
